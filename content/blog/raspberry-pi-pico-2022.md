@@ -1,8 +1,8 @@
-Title: Raspberry Pi Pico Microcontroller
+Title: The Raspberry Pi Pico Accessories 
 Date: Tue 25 Jan 2022
 Authors: "Cian O'Flynn"
 Modified: Sun 13 August 2017
-Category: reviews 
+Category: reviews; setup 
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
 author_gplusid:
@@ -10,7 +10,7 @@ Summary:
 
 Raspberry Pi Trading are the UK based company behind the development of the RP2040 microcontroller chip. They released a board called the 'Pi Pico', which includes this microcontroller in January of 2021. 
 
-The boards are designed for low cost (around around €5) and mass production.  
+The boards are designed for low cost (around around €5) and mass production. Each one comes in a blister tape pack.   
 
 
 I received one a couple of months ago, and using online instructions I have make the following accessories for the Pico.
