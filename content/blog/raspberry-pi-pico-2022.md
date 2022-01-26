@@ -2,7 +2,7 @@ Title: The Raspberry Pi Pico Accessories
 Date: Tue 25 Jan 2022
 Authors: "Cian O'Flynn"
 Modified: Sun 13 August 2017
-Category: reviews; setup 
+Category: reviews, setup 
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
 author_gplusid:
