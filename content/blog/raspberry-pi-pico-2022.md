@@ -1,7 +1,7 @@
 Title: Raspberry Pi Pico Microcontroller
-Date: Tue 25 Jan 2022
+Date: Tue 25 January 2022
 Authors: "Cian O'Flynn"
-Modified: Sun 13 August 2017
+Modified: Sun 26 January 2022
 Category: reviews 
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
@@ -13,15 +13,15 @@ Raspberry Pi Trading are the UK based company behind the development of the RP20
 The boards are designed for low cost (around around €5) and mass production.  
 
 
-I received one a couple of months ago, and using online instructions I have make the following accessories for the Pico.
+I've had a Pico for a couple of months, and using online instructions I have make the following accessories.
 
-1. VGA Interface
+1. VGA Interface 
 
 ![Picture of Raspberry Pi Pico VGA interface](https://cianoflynn.github.io/images/pico/pico_vga.jpg)
 
+The RP2040 has a feature called 'Programmable Input/Output', or ['PIO'](https://www.youtube.com/watch?v=ODlB05xMg04) that enables the Pico to be able to produce a VGA signal. 
 
 2. SD Card reader
-
 ![SD Card interface](http://cianoflynn.github.io/images/pico/pico_sdcard.jpg)
 
 
