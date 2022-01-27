@@ -1,8 +1,9 @@
 Title: The Raspberry Pi Pico Accessories 
-Date: Tue 25 Jan 2022
-Authors: "Cian O'Flynn"
-Modified: Sun 13 August 2017
+Modified: Thursday 27 January 2022
 Category: reviews, setup 
+Date: Tuesday 25 January 2022
+Authors: "Cian O'Flynn"
+Modified: Thursday 27 January 2022
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
 author_gplusid:
@@ -12,15 +13,20 @@ Raspberry Pi Trading are the UK based company behind the development of the RP20
 
 The boards are designed for low cost (around around €5) and mass production. Each one comes in a blister tape pack.   
 
+It's possible to program the Pico with C and MicroPython (a version of Python language, optimized to run on a microcontroller). 
 
-I received one a couple of months ago, and using online instructions I have make the following accessories for the Pico.
+The market for these boards seems to be education, prototyping and electronics hobbyists.
 
-1. VGA Interface
+
+I've had a Pico for a couple of months, and using online instructions I've made the following accessories...
+
+1. VGA Interface 
 
 ![Picture of Raspberry Pi Pico VGA interface](https://cianoflynn.github.io/images/pico/pico_vga.jpg)
 
+The RP2040 has a feature called 'Programmable Input/Output', or ['PIO'](https://www.youtube.com/watch?v=ODlB05xMg04) which gives the Pico to be ability to produce a VGA signal. 
 
-2. SD Card reader
+2. SD Card Reader
 
 ![SD Card interface](http://cianoflynn.github.io/images/pico/pico_sdcard.jpg)
 
@@ -28,6 +34,7 @@ I received one a couple of months ago, and using online instructions I have make
 Here is the micro-sd card read installed in the breadboard. (The jumper wires are not connected)
 ![SD Card Installed](https://cianoflynn.github.io/images/pico/pico_sd_installed.jpg)
 
+3. Reset Button.
 
 Sources:
 
