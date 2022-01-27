@@ -1,7 +1,7 @@
 Title: Raspberry Pi Pico Microcontroller
 Date: Tuesday 25 January 2022
 Authors: "Cian O'Flynn"
-Modified: Thurs 27 January 2022
+Modified: Thursday 27 January 2022
 Category: reviews 
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
