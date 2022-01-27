@@ -3,7 +3,6 @@ Modified: Thursday 27 January 2022
 Category: reviews, setup 
 Date: Tuesday 25 January 2022
 Authors: "Cian O'Flynn"
-Modified: Thursday 27 January 2022
 Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
 Slug:
 author_gplusid:
