@@ -10,7 +10,11 @@ Summary:
 
 Raspberry Pi Trading are the UK based company behind the development of the RP2040 microcontroller chip. They released a board called the 'Pi Pico', which includes this microcontroller in January of 2021. 
 
-The boards are designed for low cost (around around €5) and mass production.  
+The boards are designed for low cost (around around €5) and mass production. 
+
+It's possible to program the Pico with C and MicroPython (a version of Python language, optimized to run on a microcontroller). 
+
+The market for these boards seems to be education, prototyping or el:wectronics hobbyists.
 
 
 I've had a Pico for a couple of months, and using online instructions I have make the following accessories.
@@ -19,7 +23,7 @@ I've had a Pico for a couple of months, and using online instructions I have mak
 
 ![Picture of Raspberry Pi Pico VGA interface](https://cianoflynn.github.io/images/pico/pico_vga.jpg)
 
-The RP2040 has a feature called 'Programmable Input/Output', or ['PIO'](https://www.youtube.com/watch?v=ODlB05xMg04) that enables the Pico to be able to produce a VGA signal. 
+The RP2040 has a feature called 'Programmable Input/Output', or ['PIO'](https://www.youtube.com/watch?v=ODlB05xMg04) which gives the Pico to be ability to produce a VGA signal. 
 
 2. SD Card reader
 ![SD Card interface](http://cianoflynn.github.io/images/pico/pico_sdcard.jpg)
