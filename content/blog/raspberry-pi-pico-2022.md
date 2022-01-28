@@ -1,4 +1,4 @@
-Title: The Raspberry Pi Pico Accessories 
+Title: Raspberry Pi Pico Accessories 
 Modified: Thursday 27 January 2022
 Category: reviews, setups 
 Date: Tuesday 25 January 2022
