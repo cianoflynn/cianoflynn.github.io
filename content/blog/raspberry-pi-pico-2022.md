@@ -1,9 +1,9 @@
 Title: The Raspberry Pi Pico Accessories 
 Modified: Thursday 27 January 2022
-Category: reviews, setup 
+Category: reviews, setups 
 Date: Tuesday 25 January 2022
 Authors: "Cian O'Flynn"
-Tags: Raspberry Pi; Pi Pico; Microcontroller; Review 
+Tags: Raspberry Pi; Pi Pico; Microcontroller;  
 Slug:
 author_gplusid:
 Summary:
@@ -37,7 +37,8 @@ Here is the micro-sd card read installed in the breadboard. (The jumper wires ar
 
 Sources:
 
-[Raspberry Pi Pico VGA video output using only resistors](https://www.youtube.com/watch?v=RmPWcsvGSyk)
+[ Robin Grosset :Raspberry Pi Pico VGA video output using only resistors](https://www.youtube.com/watch?v=RmPWcsvGSyk)
 
-[Use SDCard with MicroPython on Raspberry Pi Pico](https://forums.raspberrypi.com/viewtopic.php?f=146&t=307275&p=1838407&hilit=SDcard#p1838663)
+[Daniel Perron :Use SDCard with MicroPython on Raspberry Pi Pico](https://forums.raspberrypi.com/viewtopic.php?f=146&t=307275&p=1838407&hilit=SDcard#p1838663)
+
 
