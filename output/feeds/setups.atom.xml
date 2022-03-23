@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>- setups</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/setups.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2017-08-13T00:00:00+01:00</updated><subtitle>i-wysiwygcybesurfer2.0</subtitle><entry><title>Logitech M570 Trackball Ubuntu Setup</title><link href="http://localhost:8000/logitech-m570-trackball-ubuntu-setup.html" rel="alternate"></link><published>2017-08-13T00:00:00+01:00</published><updated>2017-08-13T00:00:00+01:00</updated><author><name>"Cian O'Flynn"</name></author><id>tag:localhost,2017-08-13:/logitech-m570-trackball-ubuntu-setup.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Trackball"&gt;Wikipedia&lt;/a&gt; has a good article about trackballs, their history (they were 1st called &lt;a href="https://upload.wikimedia.org/wikipedia/en/7/7d/RollerballPoster.jpg"&gt;Rollerballs&lt;/a&gt;) as well as some of the reasons people use them (versus using a mouse).&lt;/p&gt;
+&lt;p&gt;One of the main reasons for using a trackball is ergonomics (design effiency and comfort). This was mostly the reason I decided to add one to my workspace. One other benefit of a trackball is that you can use them even if your desk is covered in papers (not that my desk is ever like that).&lt;/p&gt;
+&lt;p&gt;After reading a bit about trackballs and the reviews of the various models available I decided to pick up a 'lightly used' 2nd hand Logitech M570. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Picture of Logitech m570 trackball" src="https://cianoflynn.github.io/images/trackball/m570_Overhead_Logitech.png"&gt;&lt;/p&gt;
+&lt;p&gt;The 2 small buttons with the arrows on them are the forwards and back buttons. I have added the forward button as a modifier to use the trackball to scroll horizontally.&lt;/p&gt;
+&lt;p&gt;This post will document the setup process that I went through to get the trackball working with ubuntu 16.04.&lt;/p&gt;
+&lt;p&gt;The trackball comes with a &lt;a href="https://en.wikipedia.org/wiki/Logitech_Unifying_receiver"&gt;'Logitech Universal Receiver'&lt;/a&gt; (basically, a usb dongle).&lt;/p&gt;
+&lt;p&gt;Before configuring the M570 it's best install a piece of software called &lt;a href="http://pwr.github.io/Solaar/"&gt;Solaar&lt;/a&gt; which works with the receiver and the devices.&lt;/p&gt;
+&lt;p&gt;Here's a description of what it does from Solaar's website.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Solaar is a Linux device manager for Logitech’s Unifying Receiver peripherals. It is able to pair/unpair devices to the receiver, and for most devices read battery status.&lt;/p&gt;
+&lt;p&gt;It comes in two flavors, command-line and GUI. Both are able to list the devices paired to a Unifying Receiver, show detailed info for each device, and also pair/unpair supported devices with the receiver.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So off we go and install Solaar via the terminal....&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;solaar&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Next we create a configuration file called 99-m570logitech.conf in /usr/share/x11/xorg.conf.d/&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;X11&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;xorg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;99&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;M570Logitech&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To this newly created file we paste in the following text.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Section&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;InputClass&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# User-defined name for this profile/input class&lt;/span&gt;
+&lt;span class="n"&gt;Identifier&lt;/span&gt;      &lt;span class="s2"&gt;&amp;quot;Logitech M570&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Tailed /var/log/Xorg.0.log to figure out the following&lt;/span&gt;
+&lt;span class="n"&gt;MatchProduct&lt;/span&gt;    &lt;span class="s2"&gt;&amp;quot;Logitech M570&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;MatchIsPointer&lt;/span&gt;  &lt;span class="s2"&gt;&amp;quot;on&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;MatchDevicePath&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/dev/input/event*&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;Driver&lt;/span&gt;          &lt;span class="s2"&gt;&amp;quot;evdev&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;## OPTIONS&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;SendCoreEvents&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# EmulateWheel refers to emulating a mouse wheel using the trackball&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;EmulateWheel&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Set to middle-click&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;EmulateWheelButton&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;9&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Affects distance trackball needs to move register scroll movement &lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;EmulateWheelInertia&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;10&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Timeout between EmulateWheelButton click and &amp;quot;emulation&amp;quot; to begin&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;EmulateWheelTimeout&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;200&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# Comment out XAxis if you don&amp;#39;t want horizontal scroll&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ZAxisMapping&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;4 5&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;XAxisMapping&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;6 7&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;DeviceAccelProfile&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;AdaptiveDeceleration&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;VelocityScale&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;1.7&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;EndSection&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Save and close this file. Next, reboot your computer.&lt;/p&gt;
+&lt;p&gt;After the reboot the M570 should be working with the small forward key as the modifier for horizontal trackball scrolling.&lt;/p&gt;
+&lt;p&gt;If you want to change the modifier button you need to figure out which button on the M570 corresponds to which number. You can use the command...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;xev&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;button&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This creates a box on screen. Click the box and you can see the corresponding button number in the terminal. (The grep button bit filters the information to make it more readable.)&lt;/p&gt;
+&lt;p&gt;Once you know which buttons are where. You can alter the line...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Option&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;EmulateWheelButton&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;9&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Substituting the number "9"(The forward arrow button) for the button you prefer. &lt;/p&gt;</content><category term="setups"></category><category term="linux"></category><category term="ubuntu"></category><category term="trackballs"></category><category term="logitech M570"></category></entry></feed>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>- reviews, setups</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/reviews-setups.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2022-01-27T00:00:00+00:00</updated><subtitle>i-wysiwygcybesurfer2.0</subtitle><entry><title>Raspberry Pi Pico Accessories</title><link href="http://localhost:8000/raspberry-pi-pico-accessories.html" rel="alternate"></link><published>2022-01-25T00:00:00+00:00</published><updated>2022-01-27T00:00:00+00:00</updated><author><name>"Cian O'Flynn"</name></author><id>tag:localhost,2022-01-25:/raspberry-pi-pico-accessories.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Raspberry Pi Trading are the UK based company behind the development of the RP2040 microcontroller chip. They released a board called the 'Pi Pico', which includes this microcontroller in January of 2021. &lt;/p&gt;
+&lt;p&gt;The boards are designed for low cost (around around €5) and mass production. Each one comes in a blister tape pack.   &lt;/p&gt;
+&lt;p&gt;It's possible to program the Pico with C and MicroPython (a version of Python language, optimized to run on a microcontroller). &lt;/p&gt;
+&lt;p&gt;The market for these boards seems to be education, prototyping and electronics hobbyists.&lt;/p&gt;
+&lt;p&gt;I've had a Pico for a couple of months, and using online instructions I've made the following accessories...&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;VGA Interface &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="Picture of Raspberry Pi Pico VGA interface" src="https://cianoflynn.github.io/images/pico/pico_vga.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;The RP2040 has a feature called 'Programmable Input/Output', or &lt;a href="https://www.youtube.com/watch?v=ODlB05xMg04"&gt;'PIO'&lt;/a&gt; which gives the Pico to be ability to produce a VGA signal. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SD Card Reader&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="SD Card interface" src="http://cianoflynn.github.io/images/pico/pico_sdcard.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Here is the micro-sd card read installed in the breadboard. (The jumper wires are not connected)
+&lt;img alt="SD Card Installed" src="https://cianoflynn.github.io/images/pico/pico_sd_installed.jpg"&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reset Button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sources:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=RmPWcsvGSyk"&gt; Robin Grosset :Raspberry Pi Pico VGA video output using only resistors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forums.raspberrypi.com/viewtopic.php?f=146&amp;amp;t=307275&amp;amp;p=1838407&amp;amp;hilit=SDcard#p1838663"&gt;Daniel Perron :Use SDCard with MicroPython on Raspberry Pi Pico&lt;/a&gt;&lt;/p&gt;</content><category term="reviews, setups"></category><category term="Raspberry Pi"></category><category term="Pi Pico"></category><category term="Microcontroller"></category></entry></feed>
