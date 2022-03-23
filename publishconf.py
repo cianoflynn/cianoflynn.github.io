@@ -22,3 +22,4 @@ DELETE_OUTPUT_DIRECTORY = False
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = 'UA-1307975-10'                                                                                                           

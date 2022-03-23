@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+#from __future__ import unicode_literals
 from datetime import datetime
 
 AUTHOR = "Cian O'Flynn"
@@ -8,15 +9,16 @@ SITETITLE = AUTHOR
 SITESUBTITLE = "i-wysiwygcybesurfer2.0" 
 SITEDESCRIPTION = "Site description goes here"
 # Alter for testing locally 
-#SITEURL = "http://localhost:8000"
-SITEURL = "https://cianoflynn.github.io"
+SITEURL = "http://localhost:8000"
+#SITEURL = "https://cianoflynn.github.io"
 
 SITELOGO = SITEURL+"/images/profile.png"
 FAVICON = SITEURL+"/images/favicon.ico" 
 ROBOTS = "index, follow"
 
 
-THEME = "Flex"
+THEME = "../../pelican-themes/Flex/Flex"
+PYGMENTS_STYLE = "friendly"
 PATH = "content"
 STATIC_PATHS = ["images", "figures"]
 ARTICLE_PATHS = ["blog"]
@@ -25,13 +27,19 @@ TIMEZONE = "Europe/Dublin"
 DEFAULT_LANG = "en"
 
 
+# for highlighting code-segments
+# PYGMENTS_RST_OPTIONS = {'cssclass': 'codehilite', 'linenos': 'table'}   # disable RST options
+# MARKDOWN = ['codehilite(noclasses=True, pygments_style=native)', 'extra']  # enable MD options
+
+
 DISPLAY_PAGES_ON_MENU = False # Don't display all pages by default
 USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
 
 # Feed generation is usually not desired when developing
+#FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_ATO = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -63,4 +71,4 @@ DEFAULT_PAGINATION = 10
 DISQUS_SITENAME = "cianoflynn-github-com"
 ADD_THIS_ID = 'ra-597a1013e84a12df'
 STATUSCAKE = 'rQ8ZHS9lXr'
-GOOGLE_ANALYTICS = 'UA-1234-5678'
+GOOGLE_ANALYTICS = 'UA-1307975-10'
