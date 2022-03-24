@@ -48,29 +48,29 @@ To this newly created file we paste in the following text.
 
 ```python
 Section "InputClass"
-# User-defined name for this profile/input class
-Identifier      "Logitech M570"
-# Tailed /var/log/Xorg.0.log to figure out the following
-MatchProduct    "Logitech M570"
-MatchIsPointer  "on"
-MatchDevicePath "/dev/input/event*"
-Driver          "evdev"
-## OPTIONS
-Option "SendCoreEvents" "true"
-# EmulateWheel refers to emulating a mouse wheel using the trackball
-Option "EmulateWheel" "true"
-# Set to middle-click
-Option "EmulateWheelButton" "9"
-# Affects distance trackball needs to move register scroll movement 
-Option "EmulateWheelInertia" "10"
-# Timeout between EmulateWheelButton click and "emulation" to begin
-Option "EmulateWheelTimeout" "200"
-# Comment out XAxis if you don't want horizontal scroll
-Option "ZAxisMapping" "4 5"
-Option "XAxisMapping" "6 7"
-Option "DeviceAccelProfile" "2"
-Option "AdaptiveDeceleration" "2"
-Option "VelocityScale" "1.7"
+		# User-defined name for this profile/input class
+		Identifier      "Logitech M570"
+		# Tailed /var/log/Xorg.0.log to figure out the following
+		MatchProduct    "Logitech M570"
+		MatchIsPointer  "on"
+		MatchDevicePath "/dev/input/event*"
+		Driver          "evdev"
+		## OPTIONS
+		Option "SendCoreEvents" "true"
+		# EmulateWheel refers to emulating a mouse wheel using the trackball
+		Option "EmulateWheel" "true"
+		# Set to middle-click
+		Option "EmulateWheelButton" "9"
+		# Affects distance trackball needs to move register scroll movement 
+		Option "EmulateWheelInertia" "10"
+		# Timeout between EmulateWheelButton click and "emulation" to begin
+		Option "EmulateWheelTimeout" "200"
+		# Comment out XAxis if you don't want horizontal scroll
+		Option "ZAxisMapping" "4 5"
+		Option "XAxisMapping" "6 7"
+		Option "DeviceAccelProfile" "2"
+		Option "AdaptiveDeceleration" "2"
+		Option "VelocityScale" "1.7"
 EndSection
 ```
 
@@ -94,3 +94,8 @@ Option "EmulateWheelButton" "9"
 
 
 Substituting the number "9"(The forward arrow button) for the button you prefer. 
+
+**Sources:**
+
+[John Paul Herold - Scroll Like A Ninja - Logitech M570 Trackball & Linux Mint
+](https://dailyherold.io/2014/10/31/ninja-scrolling-linux-m570-trackball/)

@@ -9,8 +9,8 @@ SITETITLE = AUTHOR
 SITESUBTITLE = "i-wysiwygcybesurfer2.0" 
 SITEDESCRIPTION = "Site description goes here"
 # Alter for testing locally 
-SITEURL = "http://localhost:8000"
-#SITEURL = "https://cianoflynn.github.io"
+#SITEURL = "http://localhost:8000"
+SITEURL = "https://cianoflynn.github.io"
 
 SITELOGO = SITEURL+"/images/profile.png"
 FAVICON = SITEURL+"/images/favicon.ico" 
@@ -37,8 +37,9 @@ USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
 
 # Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+#FEED_ALL_ATOM = None
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATO = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
